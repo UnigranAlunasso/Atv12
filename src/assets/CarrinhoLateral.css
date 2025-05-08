@@ -1,0 +1,56 @@
+.carrinho-lateral {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    background-color: #f7f7f7;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  
+  .carrinho-lateral h2 {
+    margin-bottom: 15px;
+  }
+  
+  .item-carrinho {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .item-carrinho img {
+    width: 60px;
+    margin-right: 10px;
+  }
+  
+  .item-carrinho .nome {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .item-carrinho .botoes button {
+    margin-right: 5px;
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  
+  .total {
+    margin-top: 10px;
+  }
+  
+  .finalizar {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
