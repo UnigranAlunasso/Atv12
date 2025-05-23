@@ -20,6 +20,9 @@ function Login() {
       usuarioOuEmail === usuarioSalvo.usuario || usuarioOuEmail === usuarioSalvo.email;
 
     if (identificadorValido && senha === usuarioSalvo.senha) {
+      // 👉 Aqui está o que ativa a rota privada:
+      localStorage.setItem("usuarioLogado", "true");
+
       navigate('/home');
     } else {
       alert('Usuário/email ou senha inválidos.');
@@ -47,9 +50,8 @@ function Login() {
         <br />
         <button type="submit">Entrar</button>
         <p>
-        Não tem uma conta? <a href="/criar">Crie uma agora</a>
+          Não tem uma conta? <a href="/criar">Crie uma agora</a>
         </p>
-
       </form>
     </div>
   );
